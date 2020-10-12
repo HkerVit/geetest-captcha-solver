@@ -37,4 +37,4 @@ class Geetest(object):
         return json.loads(r.text[22:][:-1])
 
 if __name__ == "__main__":
-    print(Geetest().GetResponse())
+    print(Geetest('f2ae6cadcf7886856696502e1d55e00c', 'https://www.ebay.com/distil_r_captcha_challenge').GetResponse())
