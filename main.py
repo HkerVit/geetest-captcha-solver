@@ -26,7 +26,6 @@ class Geetest(object):
             data = r.record(s)
             raw = r.recognize_google(data)
             answer = ''
-            os.remove('payload.wav')
             for char in raw:
                 if char.isdigit():
                     answer += char
